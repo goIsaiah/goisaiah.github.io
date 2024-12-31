@@ -1,7 +1,5 @@
 "use client"
 
-import { useAuth } from "@/lib/auth_context";
-
 import { Landmark } from "lucide-react";
 
 import Link from "next/link";
