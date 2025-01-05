@@ -10,6 +10,7 @@ import { Landmark } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
+import { AuthProvider } from "@/lib/auth_context";
 
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
@@ -40,11 +41,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen`}
       >
+        <AuthProvider>
           <Navbar />
           <main>
             {children}
           </main>
           <Footer />
+        </AuthProvider>
       </body>
     </html>
   );
