@@ -15,7 +15,7 @@ export default function Navbar() {
       </div>
       <div className="flex justify-center align-center gap-4">
             <h1 className="flex justify-center align-center text-xl font-bold text-center m-auto">
-              GoBidder
+              Isaiah Gocool
             </h1>
       </div>
       <div className="flex justify-end align-center">

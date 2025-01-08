@@ -28,8 +28,8 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="flex flex-col gap-4 items-center justify-center h-lvh">
-        <h1 className="text-5xl font-bold invert-text">Bid Fast. Play Safe. Win Big.</h1>
-        <p className="text-xl invert-text">Join the most reliable auction platform.</p>
+        <h1 className="text-5xl font-bold invert-text">My name is Isaiah Gocool</h1>
+        <p className="text-xl invert-text">Welcome to my website!</p>
         <Link href="/signup">
           <Button className="text-xl font-bold invert-text" variant="link">Sign up now</Button>
         </Link>
@@ -83,75 +83,46 @@ export default function Home() {
         </Carousel>
       </div>
       <Card style={{ marginTop: "250px" }} className="w-1/2 mt-8">
-        <CardHeader>
-          <CardTitle>How it works.</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-5 gap-3">
-            <div>
-              <p>
-                <span className="border-solid border-4 border-black rounded-full p-2 text-xl font-bold">
-                  1
-                </span>
-              </p>
-            </div>
-            <div className="col-span-4">
-              <h2 className="font-bold text-xl">
-                Make an account.
-              </h2>
-              <p>
-                You need an email and a password, plus payment/shipping details.
-              </p>
-            </div>
+  <CardHeader>
+    <CardTitle>About Me</CardTitle>
+  </CardHeader>
+  <CardContent>
+    <div className="grid grid-cols-2 gap-4">
+      {/* Left side: Text */}
+      <div>
+        <div className="grid grid-cols-5 gap-3">
+          <div className="col-span-4">
+            <p>
+              GoBidder has anything you can think of: from sneakers to motorcycles, someone's selling it here.
+            </p>
+            <br />
+            <p>GoBidder holds two types of auctions:</p>
+            <ul className="list-disc list-inside">
+              <li>
+                <span className="font-bold">Forward Auctions:</span> bidders increase their bid until all other bidders stop. Highest bidder wins.
+              </li>
+              <li>
+                <span className="font-bold">Dutch Auctions:</span> price decreases periodically until someone chooses to bid. First bidder wins.
+              </li>
+            </ul>
+            <br />
+            <p>Simple, easy, and safe. You only pay if you win the auction.</p>
           </div>
-          <div className="grid grid-cols-5 gap-3 mt-8">
-            <div>
-              <p>
-                <span className="border-solid border-4 border-black rounded-full p-2 text-xl font-bold">
-                  2
-                </span>
-              </p>
-            </div>
-            <div className="col-span-4">
-              <h2 className="font-bold text-xl">
-                Browse auctions.
-              </h2>
-              <p>
-                GoBidder has anything you can think of: from sneakers to motorcycles, someone's selling it here.
-              </p>
-            </div>
-          </div>
-          <div className="grid grid-cols-5 gap-3 mt-8">
-            <div>
-              <p>
-                <span className="border-solid border-4 border-black rounded-full p-2 text-xl font-bold">
-                  3
-                </span>
-              </p>
-            </div>
-            <div className="col-span-4">
-              <h2 className="font-bold text-xl">
-                Place your bid.
-              </h2>
-              <p>
-                GoBidder has anything you can think of: from sneakers to motorcycles, someone's selling it here.
-              </p>
-              <br />
-              <p>GoBidder holds two types of auctions:</p>
-              <ul className="list-disc list-inside">
-                <li>
-                  <span className="font-bold">Forward Auctions:</span> bidders increase their bid until all other bidders stop. Highest bidder wins.
-                </li>
-                <li>
-                  <span className="font-bold">Dutch Auctions:</span> price decreases periodically until someone chooses to bid. First bidder wins.
-                </li>
-              </ul>
-              <br />
-              <p>Simple, easy, and safe. You only pay if you win the auction.</p>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+        </div>
+      </div>
+
+      {/* Right side: Image */}
+      <div className="flex items-center justify-center">
+        <img
+          src="src\app\1682349394905.jfif"
+          alt="How it works illustration"
+          className="max-w-full h-auto"
+        />
+      </div>
+    </div>
+  </CardContent>
+</Card>
+
       <div style={{ marginTop: "300px", marginBottom: "200px" }} className="flex flex-col gap-4 items-center justify-center">
         <h1 className="text-5xl font-bold invert-text mb-8">What are you waiting for?</h1>
         <Link href="/signup">
