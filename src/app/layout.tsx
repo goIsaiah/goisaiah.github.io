@@ -26,7 +26,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "GoBidder - Fast, Reliable, Secure Auctions",
+  title: "Isaiah Gocool",
   description: "GoBidder is a fast, reliable, secure auction platform.",
 };
 

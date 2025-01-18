@@ -30,12 +30,12 @@ export default function Home() {
       <div className="flex flex-col gap-4 items-center justify-center h-lvh">
         <h1 className="text-5xl font-bold invert-text">My name is Isaiah Gocool</h1>
         <p className="text-xl invert-text">Welcome to my website!</p>
-        <Link href="/signup">
-          <Button className="text-xl font-bold invert-text" variant="link">Sign up now</Button>
+        <Link href="#about-me">
+          <Button className="text-xl font-bold invert-text" variant="link">Scroll down to learn more about me!</Button>
         </Link>
         <div>
           <div className="arrow-div">
-            <Link href="#features-preview" className="arrow">
+            <Link href="#about-me" className="arrow">
               <ChevronDown className="invert-text" size={128} />
             </Link>
           </div>
@@ -87,26 +87,22 @@ export default function Home() {
     <CardTitle>About Me</CardTitle>
   </CardHeader>
   <CardContent>
-    <div className="grid grid-cols-2 gap-4">
+    <div id="about-me" className="grid grid-cols-2 gap-4">
       {/* Left side: Text */}
       <div>
         <div className="grid grid-cols-5 gap-3">
-          <div className="col-span-4">
+          <div className="col-span-6">
             <p>
-              GoBidder has anything you can think of: from sneakers to motorcycles, someone's selling it here.
+              My name is Isaiah, and I am a 4th year Software Engineering student at the Lassonde School of Engineering, York University.
+              I have been coding since 2018, initially starting out with the Turing programming language, before I moved onto Python and finally Java the 
+              following year.
+            </p>
+            <p>
+            <br />
+              Most of my projects have been coded in Java, but I have since expanded my knowledge to working with frontend frameworks like TypeScript,
+              React.js, and Tailwind.css.  Feel free to look around my website to learn more about myself!
             </p>
             <br />
-            <p>GoBidder holds two types of auctions:</p>
-            <ul className="list-disc list-inside">
-              <li>
-                <span className="font-bold">Forward Auctions:</span> bidders increase their bid until all other bidders stop. Highest bidder wins.
-              </li>
-              <li>
-                <span className="font-bold">Dutch Auctions:</span> price decreases periodically until someone chooses to bid. First bidder wins.
-              </li>
-            </ul>
-            <br />
-            <p>Simple, easy, and safe. You only pay if you win the auction.</p>
           </div>
         </div>
       </div>
@@ -114,8 +110,8 @@ export default function Home() {
       {/* Right side: Image */}
       <div className="flex items-center justify-center">
         <img
-          src="src\app\1682349394905.jfif"
-          alt="How it works illustration"
+          src="https://images.gr-assets.com/users/1713560328p8/177529097.jpg"
+          alt="myself"
           className="max-w-full h-auto"
         />
       </div>
