@@ -20,11 +20,11 @@ export default function Navbar() {
       </div>
       <div className="flex justify-end align-center">
             <>
-              <Link href="signup">
-                <Button>Sign Up</Button>
+              <Link href="/">
+                <Button>Home</Button>
               </Link>
-              <Link className="ml-4" href="login">
-                <Button>Log In</Button>
+              <Link className="ml-4" href="projects">
+                <Button>Projects</Button>
               </Link>
             </>
       </div>
