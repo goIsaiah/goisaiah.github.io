@@ -24,17 +24,31 @@ export default function Home() {
   return (
     <main className="pt-16">
       <div className="grid grid-cols-2 gap-8 px-4 mt-8">
-        {/* Card 1 */}
-        <Card className="w-full">
+        
+      <Card className="w-full flex flex-col items-center text-center">
           <CardHeader>
-            <CardTitle>GoBidder</CardTitle>
+            <CardTitle className="text-xl font-bold">GoBidder</CardTitle>
+            <div className="mt-4">
+              <img
+                src="/images/gobidder.png"
+                alt="BookMate App Screenshot"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
           </CardHeader>
-          <CardContent>
-            <p>Content for the first card.</p>
+          <CardContent className="px-6 pb-6">
+            <p className="text-gray-700">
+              An auction service I helped make in a group of 4 for EECS 4413 - E-Commerce Systems.  The frontend was made using JavaScript, and the
+              backend was programmed using Java, GRPC, and Go.
+            </p>
+            <div className="mt-4">
+              <Link href="https://github.com/KaranpreetRaja/GoBidder">
+                <Button className="mt-2">GitHub Page</Button>
+              </Link>
+            </div>
           </CardContent>
         </Card>
 
-        {/* Card 2 */}
         <Card className="w-full flex flex-col items-center text-center">
           <CardHeader>
             <CardTitle className="text-xl font-bold">BookMate</CardTitle>
