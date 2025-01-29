@@ -40,7 +40,7 @@ export default function Home() {
             <CardTitle className="text-xl font-bold">BookMate</CardTitle>
             <div className="mt-4">
               <img
-                src="https://user-images.githubusercontent.com/71765888/231013180-7df2774c-3d98-41f5-8da0-54e2bc4a0cec.png"
+                src="/images/bookmate-image.png"
                 alt="BookMate App Screenshot"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
@@ -60,8 +60,60 @@ export default function Home() {
           </CardContent>
         </Card>
 
-
         {/* Add more cards as needed */}
+        <Card className="w-full flex flex-col items-center text-center">
+          <CardHeader>
+            <CardTitle className="text-xl font-bold">Ready, Set, Go!</CardTitle>
+            <div className="mt-4">
+              <img
+                src="/images/ready-set-go.png"
+                alt="Ready Set Go demo"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+          </CardHeader>
+          <CardContent className="px-6 pb-6">
+            <p className="text-gray-700">
+              A reaction based game I made with a partner for EECS 3201 - Digital Logic Design. This game was programmed in Verilog, and used a breadboard for
+              LEDs and a buzzer.
+            </p>
+            <div className="mt-4 flex justify-center gap-4">
+              <Link href="">
+                <Button className="mt-2">GitHub Page</Button>
+              </Link>
+              <Link href="https://www.youtube.com/watch?v=gTwqR-72LD8">
+                <Button className="mt-2">Video Demo</Button>
+              </Link>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="w-full flex flex-col items-center text-center">
+          <CardHeader>
+            <CardTitle className="text-xl font-bold">Arduino Plant Watering Project</CardTitle>
+            <div className="mt-4">
+              <img
+                src="/images/plant.jpg"
+                alt="Plant demo"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+          </CardHeader>
+          <CardContent className="px-6 pb-6">
+            <p className="text-gray-700">
+              A plant watering project I made for EECS 1021 - Object Oriented Programming.  This project used an Arduino board programmed using Firmata4j in order to
+              automatically water a plant based on its soil moisture.
+            </p>
+            <div className="mt-4 flex justify-center gap-4">
+              <Link href="">
+                <Button className="mt-2">GitHub Page</Button>
+              </Link>
+              <Link href="https://www.youtube.com/watch?v=Gco_rjUpIhM">
+                <Button className="mt-2">Video Demo</Button>
+              </Link>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </main>
   );
