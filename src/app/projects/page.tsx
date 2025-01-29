@@ -38,8 +38,9 @@ export default function Home() {
           </CardHeader>
           <CardContent className="px-6 pb-6">
             <p className="text-gray-700">
-              An auction service I helped make in a group of 4 for EECS 4413 - E-Commerce Systems.  The frontend was made using JavaScript, and the
-              backend was programmed using Java, GRPC, and Go.
+              A web-based auction service I helped make in a group of 4 for EECS 4413 - E-Commerce Systems.  The frontend was made using JavaScript, 
+              and the backend was programmed using Java, GRPC, and Go.  The system gives you the option to choose between either Dutch auctions or
+              Forward auctions.
             </p>
             <div className="mt-4">
               <Link href="https://github.com/KaranpreetRaja/GoBidder">

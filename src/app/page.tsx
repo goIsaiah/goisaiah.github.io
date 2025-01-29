@@ -21,7 +21,7 @@ import {
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-import { CircleGauge, Scale, Lock, ChevronDown } from "lucide-react";
+import { CircleGauge, Scale, Lock, ChevronDown, User, MonitorCheck, BookOpenText } from "lucide-react";
 
 export default function Home() {
   const router = useRouter();
@@ -110,7 +110,7 @@ export default function Home() {
       {/* Right side: Image */}
       <div className="flex items-center justify-center">
         <img
-          src="https://images.gr-assets.com/users/1713560328p8/177529097.jpg"
+          src="/images/self.jpg"
           alt="myself"
           className="max-w-full h-auto"
         />
