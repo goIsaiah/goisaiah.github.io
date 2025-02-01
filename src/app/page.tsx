@@ -41,16 +41,57 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="features-preview" className="w-1/2">
+      <Card style={{ marginTop: "250px" }} className="w-1/2 mt-8">
+        <CardHeader>
+          <CardTitle>About Me</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div id="about-me" className="grid grid-cols-2 gap-4">
+            {/* Left side: Text */}
+            <div>
+              <div className="grid grid-cols-5 gap-3">
+                <div className="col-span-6">
+                  <p>
+                    My name is Isaiah, and I am a 4th year Software Engineering student at the Lassonde School of Engineering, York University.
+                    I have been coding since 2018, initially starting out with the Turing programming language, before I moved onto Python and finally Java the
+                    following year.
+                  </p>
+                  <p>
+                    <br />
+                    Most of my projects have been coded in Java, but I have since expanded my knowledge to working with frontend frameworks like TypeScript,
+                    React.js, and Tailwind.css.  Feel free to look around my website to learn more about myself!
+                  </p>
+                  <br />
+                </div>
+              </div>
+            </div>
+
+            {/* Right side: Image */}
+            <div className="flex items-center justify-center">
+              <img
+                src="/images/self.jpg"
+                alt="myself"
+                className="max-w-full h-auto"
+              />
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+      <div id="features-preview" className="w-1/2" style={{ marginTop: "200px", marginBottom: "200px" }}>
         <Carousel>
           <CarouselContent>
             <CarouselItem>
               <div className="p-1">
                 <div className="flex items-center justify-center p-6">
-                  <CircleGauge size={64} className="pr-4" />
+                  <MonitorCheck size={64} className="pr-4" />
                   <div>
-                    <span className="text-3xl font-semibold">Lightning-fast Bidding</span>
-                    <p>The latest cutting-edge technologies allow GoBidder to work faster than its competitors.</p>
+                    <span className="text-3xl font-semibold">My Projects</span>
+                    <p>As a coder since 2018, view some of the projects I have made or contributed to as part of my career.</p>
+                    <div className="flex justify-center mt-4">
+                      <Link href="/projects">
+                        <Button className="text-3xl font-bold invert-text p-8">View Projects</Button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -58,10 +99,15 @@ export default function Home() {
             <CarouselItem>
               <div className="p-1">
                 <div className="flex items-center justify-center p-6">
-                  <Scale size={64} className="pr-4" />
+                  <BookOpenText size={64} className="pr-4" />
                   <div>
-                    <span className="text-3xl font-semibold">Always Reliable.</span>
-                    <p>Ensuring uptime and fairness in auctions is at the top of the Gobidder development team's mind.</p>
+                    <span className="text-3xl font-semibold">Personal Hobbies</span>
+                    <p>Learn more about myself through my personal hobbies, such as watching movies, or reading books.</p>
+                    <div className="flex justify-center mt-4">
+                      <Link href="/hobbies">
+                        <Button className="text-3xl font-bold invert-text p-8">View Hobbies</Button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -69,10 +115,15 @@ export default function Home() {
             <CarouselItem>
               <div className="p-1">
                 <div className="flex items-center justify-center p-6">
-                  <Lock size={64} className="pr-4" />
+                  <User size={64} className="pr-4" />
                   <div>
-                    <span className="text-3xl font-semibold">Secure Transactions</span>
-                    <p>GoBidder guarantees transaction safety for its users through technology and user agreements.</p>
+                    <span className="text-3xl font-semibold">Contact Me</span>
+                    <p>Find my email, Github page, and resume.</p>
+                    <div className="flex justify-center mt-4">
+                      <Link href="/contact">
+                        <Button className="text-3xl font-bold invert-text p-8">Contact Me</Button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -81,49 +132,6 @@ export default function Home() {
           <CarouselPrevious />
           <CarouselNext />
         </Carousel>
-      </div>
-      <Card style={{ marginTop: "250px" }} className="w-1/2 mt-8">
-  <CardHeader>
-    <CardTitle>About Me</CardTitle>
-  </CardHeader>
-  <CardContent>
-    <div id="about-me" className="grid grid-cols-2 gap-4">
-      {/* Left side: Text */}
-      <div>
-        <div className="grid grid-cols-5 gap-3">
-          <div className="col-span-6">
-            <p>
-              My name is Isaiah, and I am a 4th year Software Engineering student at the Lassonde School of Engineering, York University.
-              I have been coding since 2018, initially starting out with the Turing programming language, before I moved onto Python and finally Java the 
-              following year.
-            </p>
-            <p>
-            <br />
-              Most of my projects have been coded in Java, but I have since expanded my knowledge to working with frontend frameworks like TypeScript,
-              React.js, and Tailwind.css.  Feel free to look around my website to learn more about myself!
-            </p>
-            <br />
-          </div>
-        </div>
-      </div>
-
-      {/* Right side: Image */}
-      <div className="flex items-center justify-center">
-        <img
-          src="/images/self.jpg"
-          alt="myself"
-          className="max-w-full h-auto"
-        />
-      </div>
-    </div>
-  </CardContent>
-</Card>
-
-      <div style={{ marginTop: "300px", marginBottom: "200px" }} className="flex flex-col gap-4 items-center justify-center">
-        <h1 className="text-5xl font-bold invert-text mb-8">What are you waiting for?</h1>
-        <Link href="/signup">
-          <Button className="text-3xl font-bold invert-text p-8">Sign up</Button>
-        </Link>
       </div>
       <div className="wave"></div>
       <div className="wave"></div>
