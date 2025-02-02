@@ -27,7 +27,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Isaiah Gocool",
-  description: "GoBidder is a fast, reliable, secure auction platform.",
+  description: "Isaiah Gocool's personal portfolio website.",
 };
 
 export default function RootLayout({
