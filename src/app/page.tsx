@@ -4,10 +4,10 @@ import "./wave.css";
 import "./invert.css"
 import "./bounce.css"
 
-import Head from "next/head";
+// import Head from "next/head";
 
 import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label"
+// import { Label } from "@/components/ui/label"
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -21,7 +21,7 @@ import {
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-import { CircleGauge, Scale, Lock, ChevronDown, User, MonitorCheck, BookOpenText } from "lucide-react";
+import { ChevronDown, User, MonitorCheck, BookOpenText } from "lucide-react";
 
 export default function Home() {
   const router = useRouter();
