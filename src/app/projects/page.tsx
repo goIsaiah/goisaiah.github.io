@@ -24,6 +24,31 @@ export default function Home() {
   return (
     <main className="pt-16">
       <div className="grid grid-cols-2 gap-8 px-4 mt-8">
+
+      <Card className="w-full flex flex-col items-center text-center">
+          <CardHeader>
+            <CardTitle className="text-xl font-bold">Tracked</CardTitle>
+            <div className="mt-4">
+              <img
+                src="/images/tracked.jpeg"
+                alt="Tracked Screenshot"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+          </CardHeader>
+          <CardContent className="px-6 pb-6">
+            <p className="text-gray-700">
+              A web-based project management site I created in a team of six for EECS 4314.  A fully functional website that allows users to create
+              accounts, projects, tasks, and join projects created by other users.  Users can also assign tasks to each other, as well as see the
+              deadlines of all their upcoming tasks for efficient project management.
+            </p>
+            <div className="mt-4">
+              <Link href="http://132.145.109.6/">
+                <Button className="mt-2">Website Link</Button>
+              </Link>
+            </div>
+          </CardContent>
+        </Card>
         
       <Card className="w-full flex flex-col items-center text-center">
           <CardHeader>
@@ -31,7 +56,7 @@ export default function Home() {
             <div className="mt-4">
               <img
                 src="/images/gobidder.png"
-                alt="BookMate App Screenshot"
+                alt="GoBidder Screenshot"
                 className="w-full h-auto rounded-lg shadow-lg"
               />
             </div>
