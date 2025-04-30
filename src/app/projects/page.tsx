@@ -42,9 +42,73 @@ export default function Home() {
               accounts, projects, tasks, and join projects created by other users.  Users can also assign tasks to each other, as well as see the
               deadlines of all their upcoming tasks for efficient project management.
             </p>
-            <div className="mt-4">
+            <div className="mt-4 flex justify-center gap-4">
               <Link href="http://132.145.109.6/">
                 <Button className="mt-2">Website Link</Button>
+              </Link>
+              <Link href="https://github.com/mahfoozm/Tracked">
+                <Button className="mt-2">Github Link</Button>
+              </Link>
+              <Link href="https://youtu.be/Z0fOFuj_dG0">
+                <Button className="mt-2">Video Demo</Button>
+              </Link>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="w-full flex flex-col items-center text-center">
+          <CardHeader>
+            <CardTitle className="text-xl font-bold">Star Sync</CardTitle>
+            <div className="mt-4">
+              <img
+                src="/images/starsync.png"
+                alt="Star Sync Screenshot"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+          </CardHeader>
+          <CardContent className="px-6 pb-6">
+            <p className="text-gray-700">
+              This was my ENG 4000 capstone project I made in a team of 6 for my last year of undergraduate courses.  Star Sync is a fully automated
+              satellite-ground station scheduling system, solving complex optimization problems such as satellite visibility and exclusion cone
+              policies.  It is also able to schedule up to 100 requests and resolve conflicting requests within 1 minute.  I helped design the
+              scheduling algorithm, and worked on various API endpoints.
+            </p>
+            <div className="mt-4 flex justify-center gap-4">
+              <Link href="https://github.com/Star-Sync">
+                <Button className="mt-2">Github Link</Button>
+              </Link>
+              <Link href="https://drive.google.com/file/d/1V9kzejfKJn7ZGgjFgHar1kVM1mwE3u4I/view?usp=sharing">
+                <Button className="mt-2">Video Demo</Button>
+              </Link>
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="w-full flex flex-col items-center text-center">
+          <CardHeader>
+            <CardTitle className="text-xl font-bold">Smart Speedometer (OBD2 Scanner)</CardTitle>
+            <div className="mt-4">
+              <img
+                src="/images/obd2.png"
+                alt="Smart Speedometer Screenshot"
+                className="w-full h-auto rounded-lg shadow-lg"
+              />
+            </div>
+          </CardHeader>
+          <CardContent className="px-6 pb-6">
+            <p className="text-gray-700">
+              This was my EECS 3216 final project I made with my brother, Evan.  Our Smart Speedometer is a program that leverages the data
+              received from an OBD2 port (which was plugged into the car), and then display it on a DE10-Lite board.  Visual Basic was used to get the
+              Bluetooth data from the OB2 port, and Arduino/C was used to send the data to the DE10-Lite, and Verilog was used to display the data on
+              the DE10-Lite.
+            </p>
+            <div className="mt-4 flex justify-center gap-4">
+              <Link href="https://github.com/goIsaiah/EECS3216/tree/main/Final%20Project/OBD2%20Logger">
+                <Button className="mt-2">Github Link</Button>
+              </Link>
+              <Link href="https://youtu.be/t8RRrwd8vqU">
+                <Button className="mt-2">Video Demo</Button>
               </Link>
             </div>
           </CardContent>
