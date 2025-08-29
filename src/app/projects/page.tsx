@@ -45,6 +45,7 @@ export default function Home() {
               visible: { opacity: 1, y: 0 },
             }}
             transition={{ duration: 0.6 }}
+            whileHover={{ y: -10, scale: 1.03 }}
           >
             <Card className="w-full flex flex-col items-center text-center">
               <CardHeader>
