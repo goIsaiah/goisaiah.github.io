@@ -22,6 +22,7 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import { ChevronDown, User, MonitorCheck, BookOpenText } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 export default function Home() {
   const router = useRouter();
@@ -46,7 +47,7 @@ export default function Home() {
           <CardTitle>About Me</CardTitle>
         </CardHeader>
         <CardContent>
-          <div id="about-me" className="grid grid-cols-2 gap-4">
+          <div id="about-me" className="scroll-mt-24 grid grid-cols-2 gap-4">
             {/* Left side: Text */}
             <div>
               <div className="grid grid-cols-5 gap-3">
@@ -136,6 +137,33 @@ export default function Home() {
       <div className="wave"></div>
       <div className="wave"></div>
       <div className="wave"></div>
+      <section id="contact" className="w-full flex justify-center mt-12 mb-12">
+        <Card className="w-1/2 py-12">
+          <CardHeader>
+            <CardTitle className="text-3xl md:text-4xl text-center">
+              Contact Me
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="flex flex-col items-center gap-6">
+            <div className="flex flex-col md:flex-row gap-4">
+              <Link href="https://github.com/goIsaiah">
+                <Button className="px-6 py-3 text-lg flex items-center gap-2">
+                  <Github className="w-6 h-6" /> Github Account
+                </Button>
+              </Link>
+
+              <Link href="https://www.linkedin.com/in/isaiah-gocool-7a0a08258/">
+                <Button className="px-6 py-3 text-lg flex items-center gap-2 bg-[#0077b5] hover:bg-[#005a8c] text-white">
+                  <Linkedin className="w-6 h-6" /> Linkedin Profile
+                </Button>
+              </Link>
+            </div>
+          </CardContent>
+        </Card>
+      </section>
+
+
+
     </div>
   );
 }
